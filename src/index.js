@@ -1,6 +1,6 @@
 $(document).ready(function () { // when document is ready
 
-
+const dateNow = new Date();
     // form validation
     const userData = {
         email: "hello@gmail.com",
@@ -10,6 +10,7 @@ $(document).ready(function () { // when document is ready
         "ID": "3126f532-4851-490e-ac8f-03135f60bb65",
         "Message": "",
         "Global": {
+            "NewConfirmed": 610701,
             "NewConfirmed": 610701,
             "TotalConfirmed": 148506153,
             "NewDeaths": 10005,
@@ -2517,7 +2518,7 @@ $(document).ready(function () { // when document is ready
     const responseDate = res.Date
 
     const dateValue = document.querySelector(".date")
-    const date = new Date(responseDate)
+    const date = new Date()
 
     const month = date.getMonth() + 1
     const day = date.getDate()
